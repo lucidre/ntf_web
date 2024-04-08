@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:ntf_web/common_libs.dart';
 import 'package:ntf_web/models/home_top_collection.dart';
@@ -60,72 +59,70 @@ class _HomePageState extends State<HomePage> {
     const side = space32 * 2;
     const top = space32 * 4;
 
-    return SingleChildScrollView(
+    return ListView(
       physics: const BouncingScrollPhysics(),
-      child: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.only(
-              left: side,
-              right: side,
-            ),
-            child: buildBodyItem1(),
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(
+            left: side,
+            right: side,
           ),
-          buildBodyItem2(),
-          Padding(
-            padding: const EdgeInsets.only(
-              top: top,
-              left: side,
-              right: side,
-            ),
-            child: buildBodyItem3(),
+          child: buildBodyItem1(),
+        ),
+        buildBodyItem2(),
+        Padding(
+          padding: const EdgeInsets.only(
+            top: top,
+            left: side,
+            right: side,
           ),
-          verticalSpacer32,
-          buildBodyItem9(),
-          Padding(
-            padding: const EdgeInsets.only(
-              top: top,
-              left: side,
-              right: side,
-            ),
-            child: buildBodyItem4(),
+          child: buildBodyItem3(),
+        ),
+        verticalSpacer32,
+        buildBodyItem9(),
+        Padding(
+          padding: const EdgeInsets.only(
+            top: top,
+            left: side,
+            right: side,
           ),
-          Padding(
-            padding: const EdgeInsets.only(
-              top: top,
-              left: side,
-              right: side,
-            ),
-            child: buildBodyItem5(),
+          child: buildBodyItem4(),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(
+            top: top,
+            left: side,
+            right: side,
           ),
-          Padding(
-            padding: const EdgeInsets.only(
-              top: top,
-              left: side,
-              right: side,
-            ),
-            child: buildBodyItem6(),
+          child: buildBodyItem5(),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(
+            top: top,
+            left: side,
+            right: side,
           ),
-          Container(
-            height: 400,
-            alignment: Alignment.topCenter,
-            margin: const EdgeInsets.only(
-              top: top,
-              left: side,
-              right: side,
-            ),
-            child: buildBodyItem7(),
+          child: buildBodyItem6(),
+        ),
+        Container(
+          height: 400,
+          alignment: Alignment.topCenter,
+          margin: const EdgeInsets.only(
+            top: top,
+            left: side,
+            right: side,
           ),
-          Padding(
-            padding: const EdgeInsets.only(
-              top: top / 4,
-              left: side,
-              right: side,
-            ),
-            child: buildBodyItem8(),
+          child: buildBodyItem7(),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(
+            top: top / 4,
+            left: side,
+            right: side,
           ),
-        ],
-      ),
+          child: buildBodyItem8(),
+        ),
+      ],
     );
   }
 

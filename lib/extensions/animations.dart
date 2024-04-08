@@ -7,7 +7,7 @@ extension WidgetAnimation on Widget {
     Duration? animationDuration,
     Offset? offset,
   }) =>
-      animate(delay: delay ?? xxSlowDuration)
+      animate(delay: delay ?? slowDuration)
           .move(
               duration: animationDuration ?? xSlowDuration,
               begin: offset ?? const Offset(0, -10))
@@ -19,7 +19,7 @@ extension WidgetAnimation on Widget {
     Offset? offset,
     Offset? offsetLeft,
   }) =>
-      animate(delay: delay ?? xxSlowDuration)
+      animate(delay: delay ?? slowDuration)
           .move(
               duration: animationDuration ?? xSlowDuration,
               begin: offset ?? const Offset(0, -10))
@@ -34,7 +34,7 @@ extension WidgetAnimation on Widget {
     Offset? offset,
     Offset? offsetRight,
   }) =>
-      animate(delay: delay ?? xxSlowDuration)
+      animate(delay: delay ?? slowDuration)
           .move(
               duration: animationDuration ?? xSlowDuration,
               begin: offset ?? const Offset(0, -10))
@@ -48,7 +48,7 @@ extension WidgetAnimation on Widget {
     Duration? animationDuration,
     Offset? offset,
   }) =>
-      animate(delay: delay ?? xxSlowDuration)
+      animate(delay: delay ?? slowDuration)
           .move(
               duration: animationDuration ?? xSlowDuration,
               begin: offset ?? const Offset(0, 10))
@@ -59,7 +59,7 @@ extension WidgetAnimation on Widget {
     Duration? animationDuration,
     Offset? offset,
   }) =>
-      animate(delay: delay ?? xxSlowDuration)
+      animate(delay: delay ?? slowDuration)
           .move(
               duration: animationDuration ?? xSlowDuration,
               begin: offset ?? const Offset(-10, 0))
@@ -70,7 +70,7 @@ extension WidgetAnimation on Widget {
     Duration? animationDuration,
     Curve? curve,
   }) =>
-      animate(delay: delay ?? xxSlowDuration).fade(
+      animate(delay: delay ?? slowDuration).fade(
           duration: animationDuration ?? xSlowDuration,
           curve: curve ?? Curves.decelerate);
 }
