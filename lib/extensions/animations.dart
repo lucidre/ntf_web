@@ -28,12 +28,11 @@ extension WidgetAnimation on Widget {
               begin: offsetLeft ?? const Offset(-10, 0))
           .fade(duration: animationDuration ?? xSlowDuration);
 
-  fadeInAndMoveFromTopAndRight({
-    Duration? delay,
-    Duration? animationDuration,
-    Offset? offset,
-    Offset? offsetRight,
-  }) =>
+  fadeInAndMoveFromTopAndRight(
+          {Duration? delay,
+          Duration? animationDuration,
+          Offset? offset,
+          Offset? offsetRight}) =>
       animate(delay: delay ?? slowDuration)
           .move(
               duration: animationDuration ?? xSlowDuration,
